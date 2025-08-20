@@ -70,6 +70,35 @@
         .blockMsg {
             max-width: 75px;
         }
+
+        .swal2-popup.custom-swal {
+            width: 700px !important;
+            /* Lebar lebih luas */
+            max-height: none !important;
+            /* Hapus batas tinggi */
+            padding-top: 30px !important;
+            padding-bottom: 30px !important;
+        }
+
+        /* bagian isi konten swal */
+        .swal2-popup.custom-swal .swal2-html-container {
+            max-height: none !important;
+            /* biar nggak scroll */
+            overflow-y: visible !important;
+            display: block !important;
+            /* ditumpuk */
+            text-align: left;
+        }
+
+        /* input biar full width & rapi */
+        .swal2-popup.custom-swal .swal2-input {
+            width: 95% !important;
+            display: block;
+        }
+
+        .swal2-container .bootstrap-datetimepicker-widget {
+            z-index: 20000 !important;
+        }
     </style>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
